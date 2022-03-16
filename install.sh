@@ -37,7 +37,7 @@ yget(){
 [ -x /usr/bin/clear ] && bCanClear=1
 [ -x /usr/bin/curl ] && bHasCurl=1
 
-YAMON='/opt/YAMon4/'
+YAMON='/tmp/mnt/sda1/YAMon4/'
 directory='current'
 [ ! -z "$1" ] && directory="$1"
 
