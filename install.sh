@@ -135,6 +135,8 @@ chmod +x "$YAMON"
 [ -d "${YAMON}data" ] && chmod -R 666 "${YAMON}data"
 sleep 1
 
+# echo "BREAKPOINT 10"
+
 _enableLogging=1
 _log2file=1
 _loglevel=0
@@ -142,7 +144,7 @@ _loglevel=0
 [ ! -d "${YAMON}includes" ] && mkdir -p "${YAMON}includes"
 getlatest="${YAMON}includes/getlatest.sh"
 _ts=$(date +"%s")
-yget "$getlatest" "$baseurl/$directory/YAMon4/Setup/includes/getlatest.sh?$_ts"
+# yget "$getlatest" "$baseurl/$directory/YAMon4/Setup/includes/getlatest.sh?$_ts"
 source "$getlatest"
 
 param='verify'
